@@ -1283,7 +1283,7 @@ button, input, select, textarea {
   padding: .2em 0; }
 
 .cd-headline.clip .cd-words-wrapper {
-  overflow: hidden;
+  overflow: auto;
   vertical-align: top; }
 
 .cd-headline.clip .cd-words-wrapper::after {
@@ -3200,7 +3200,7 @@ footer.light {
 
   .divider-dynamic {
     height: 60px; }
-
+    
   .cd-intro {
     width: 100% !important;
     max-width: 768px; }
@@ -3262,7 +3262,7 @@ footer.light {
   h5 {
     letter-spacing: 0; }
 
-  .divider-dynamic {
+    .divider-dynamic {
     height: 40px; }
 
   .padding-50 {
@@ -3284,8 +3284,22 @@ footer.light {
   #timeline.dark .timeline-vert .timeline-panel:after {
     border: none !important; }
 
+    .cd-intro {
+      width: 100% !important;
+      max-width: 320px; 
+    }
+    .cd-headline.clip .cd-words-intro {
+      display: none;
+    }
+  
   .cd-headline.clip .cd-words-wrapper::after {
     top: 2px !important; }
+
+    .cd-headline.clip span {
+      display: inline-block;
+      font-size: 20px;
+      padding: .2em 0; }
+    
 
   #top-navigation .ident .vc-name .name h2 {
     font-size: 26px !important; }
@@ -3303,6 +3317,12 @@ footer.light {
 
   #top-navigation .ident .vc-photo.photo-01 {
     min-height: 200px; }
+    .photo-04 {
+      background: url("Marek Mahdal.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 180px; }
 
   #top-navigation .menuitem {
     min-height: 70px; }
@@ -3321,5 +3341,68 @@ footer.light {
     line-height: 1.5em; }
   #page-title h2 {
     font-size: 32px; } }
-
+@media (max-width: 330px) {
+      h5 {
+        letter-spacing: 0; }
+    
+      .divider-dynamic {
+        height: 40px; }
+    
+      .padding-50 {
+        padding: 30px 14px 35px 14px; }
+    
+      .inner-content .inner-section {
+        padding: 30px 14px !important; }
+    
+      ul.timeline-vert > li > .timeline-panel {
+        width: 100% !important; }
+    
+      .timeline-vert .timeline-badge,
+      .timeline-vert:before {
+        display: none !important; }
+    
+      #timeline.light .timeline-vert .timeline-panel:before,
+      #timeline.dark .timeline-vert .timeline-panel:before,
+      #timeline.light .timeline-vert .timeline-panel:after,
+      #timeline.dark .timeline-vert .timeline-panel:after {
+        border: none !important; }
+    
+        #top-navigation .ident .vc-name .name h1 {
+          margin: 0;
+          font-size: 30px;
+          line-height: 2.1em; }
+      #top-navigation .ident .vc-name .name h2 {
+        font-size: 13px !important; }
+    
+      #top-navigation .ident .vc-name .name .name-title {
+        padding-top: 9px !important;
+        min-height: auto; }
+    
+      #top-navigation .ident .vc-name .position h4 {
+        font-size: 11px !important; }
+    
+      #top-navigation .ident .vc-name .position .position-title {
+        padding: 15px 40px 15px 40px !important;
+        min-height: auto; }
+    
+      #top-navigation .ident .vc-photo.photo-01 {
+        min-height: 100px; }        
+    
+      #top-navigation .menuitem {
+        min-height: 70px; }
+        #top-navigation .menuitem a {
+          margin-top: 24px; }
+          #top-navigation .menuitem a span {
+            font-weight: 400;
+            font-size: 13px; }
+          #top-navigation .menuitem a i {
+            display: none; }
+    
+      .hvr-sweep-to-bottom:before, .hvr-sweep-to-right:before {
+        display: none !important; }
+    
+      #page-title p {
+        line-height: 1.5em; }
+      #page-title h2 {
+        font-size: 32px; } }    
 /*# sourceMappingURL=style.css.map */
